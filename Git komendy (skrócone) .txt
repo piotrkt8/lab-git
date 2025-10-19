@@ -1,0 +1,30 @@
+# 1. Utworzenie repozytorium
+git init
+
+# 2. Sprawdzenie stanu
+git status
+
+# 3. Dodanie pliku do śledzenia
+git add tekst.txt
+
+# 4. Zapis (commit)
+git commit -m "pierwszy commit"
+
+# 5. (jeśli Git prosi o autora)
+git config --global user.name "Twoje Imię"
+git config --global user.email "twój_email@domena.com"
+
+# 6. Połączenie z GitHubem
+git remote add origin https://github.com/piotrkt8/lab-git.git
+
+# 7. Sprawdzenie połączenia
+git remote -v
+
+# 8. Wysłanie zmian na GitHuba
+git push -u origin master
+
+# 9. Historia commitów
+git log
+
+# 10. Podgląd graficzny
+gitk

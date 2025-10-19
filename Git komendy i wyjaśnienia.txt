@@ -1,0 +1,35 @@
+git init  		--Inicjalizacja repozytorium  Tworzy nowe lokalne repozytorium Git w bieżącym folderze (tworzy ukryty folder .git)
+
+
+git status    		 --Sprawdzenie statusu Pokazuje, które pliki są nowe, zmienione lub gotowe do commita.
+
+
+git add tekst.txt       --Dodanie pliku do śledzenia Dodaje wskazany plik do tzw. staging area – czyli przygotowuje go do zapisu w commicie.
+
+
+git commit -m "pierwszy commit"  	-- Zrobienie commita " /Tworzy „zrzut” bieżącego stanu projektu z opisem zmian w cudzysłowie.
+
+
+git config --global user.name "Twoje Imię i Nazwisko"    
+git config --global user.email "twój_email@domena.com"  --Ustawienie autora (jeśli wymagane)  Ustawia dane użytkownika, które będą podpisywały każdy commit.
+
+
+git config --global --list   	--Sprawdzenie konfiguracji  Wyświetla aktualne dane użytkownika zapisane w konfiguracji Gita.
+
+
+git remote add origin https://github.com/piotrkt8/lab-git.git   	-Połączenie z repozytorium GitHub  Łączy Twoje lokalne repozytorium z tym zdalnym (na GitHubie).  Słowo origin to nazwa tego połączenia.
+
+
+
+git remote -v  		--Sprawdzenie, czy połączenie działa Pokazuje adresy repozytorium zdalnego dla pobierania (fetch) i wysyłania (push).
+
+
+git push -u origin master   --  Wysłanie (push) zmian na GitHuba Wysyła wszystkie lokalne commity na GitHuba do gałęzi master.
+Flaga -u ustawia śledzenie tej gałęzi (później możesz używać po prostu git push).
+
+
+git log 	--Sprawdzenie historii commitów  Pokazuje listę commitów (autor, data, opis).
+
+
+gitk  		(opcjonalnie) Graficzne podglądanie historii Otwiera proste graficzne okno z historią commitów i gałęzi.
+
